@@ -24,9 +24,9 @@ function NewPost({ handleNewPost }) {
   };
 
   return (
-    <main className="new-post-container">
+    <main>
       <h2>New Post</h2>
-      <form className="new-post-form" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="postTitle">Title:</label>
         <input
           id="postTitle"

@@ -1,37 +1,59 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Layout from './js/Layout';
-import Home from './js/Home';
-import NewPost from './js/NewPost';
+import './App1.css';
 import About from './js/About';
-import Login from './js/Login';
-import "./js/App1.css";
+import SignUpForm from './js/SignUpForm';
+import LoginForm from './js/LoginForm';
+import PageviewIcon from '@mui/icons-material/Pageview'; 
 
 function App() {
-  const [user, setUser] = useState(null);
-  const [posts, setPosts] = useState([]);
+  const [showAbout, setShowAbout] = useState(false);
+  const [showSignUp, setShowSignUp] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
-  const handleLogin = (userData) => {
-    setUser(userData);
+  const handleAboutClick = (e) => {
+    e.preventDefault();
+    setShowAbout(true);
+    setShowSignUp(false);
+    setShowLogin(false);
   };
 
-  const handleLogout = () => {
-    setUser(null);
+  const handleSignUpClick = (e) => {
+    e.preventDefault();
+    setShowAbout(false);
+    setShowSignUp(true);
+    setShowLogin(false);
   };
 
-  const handleNewPost = (newPost) => {
-    setPosts([...posts, newPost]);
+  const handleLoginClick = (e) => {
+    e.preventDefault();
+    setShowAbout(false);
+    setShowSignUp(false);
+    setShowLogin(true);
   };
 
   return (
-    <Router>
-      <Layout user={user} handleLogout={handleLogout}>
-        <Route path="/newpost" render={() => <NewPost handleNewPost={handleNewPost} />} />
-        <Route path="/about" component={About} />
-        <Route path="/login" render={() => <Login handleLogin={handleLogin} />} />
-        <Route path="/" exact component={() => <Home user={user} posts={posts} />} />
-      </Layout>
-    </Router>
+    <div className="App">
+      <header>
+        <div className="header-content">
+          <h1>
+            Welcome to My Blog <PageviewIcon /> 
+          </h1>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about" onClick={handleAboutClick}>About</a></li>
+          <li><a href="/signup" onClick={handleSignUpClick}>Sign Up</a></li>
+          <li><a href="/login" onClick={handleLoginClick}>Login</a></li>
+        </ul>
+      </nav>
+      <main>
+        {showAbout && <About />}
+        {showSignUp && <SignUpForm />}
+        {showLogin && <LoginForm />}
+      </main>
+    </div>
   );
 }
 

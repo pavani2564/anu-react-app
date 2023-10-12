@@ -1,0 +1,22 @@
+.about-container {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  background-image: url('image.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
+h2 {
+  font-size: 2em;
+  color: #000; 
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+  color: #000;
+}
