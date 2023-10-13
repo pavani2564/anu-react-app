@@ -42,6 +42,26 @@ const monuments = [
     name: 'Ajanta Caves',
     description: 'The Ajanta Caves are rock-cut cave monuments in the state of Maharashtra, India. They are known for their ancient Buddhist cave paintings and sculptures.',
   },
+  {
+    name: 'Mehrangarh Fort',
+    description: 'Mehrangarh Fort is a massive fort located in Jodhpur, Rajasthan, India. It offers panoramic views of the city and houses a museum with a rich collection of artifacts.'
+  },
+  {
+    name: 'Amer Fort',
+    description: 'Amer Fort, also known as Amber Fort, is a majestic hilltop fort located in Jaipur, Rajasthan, India. It is renowned for its intricate architecture and grandeur.'
+  },
+  {
+    name: 'Red Fort',
+    description: 'The Red Fort is a historic fort complex in Old Delhi, India. It was the main residence of the Mughal emperors and is now a UNESCO World Heritage Site.'
+  },
+  {
+    name: 'Golconda Fort',
+    description: 'Golconda Fort is a grand fortress and citadel in Hyderabad, Telangana, India. It is famous for its acoustics, impressive architecture, and historical significance.'
+  },
+  {
+    name: 'Konark Sun Temple',
+    description: 'The Konark Sun Temple is a UNESCO World Heritage Site in Odisha, India. It is dedicated to the Sun God and is known for its stunning architecture.'
+  },
 ];
 
 function Monuments() {

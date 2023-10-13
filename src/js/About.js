@@ -4,8 +4,9 @@ import './About.css';
 function About() {
   return (
     <div className="about-container">
-      <h2>About Us</h2>
-      <p>Visit India With Us..We Are Here to Make you know About Our Pride INDIA</p>
+      <h2>Welcome to Our Journey</h2>
+      <p>Explore the Beauty and Culture of India with Us. We are here to guide you through the incredible experience that India has to offer.</p>
+      
     </div>
   );
 }

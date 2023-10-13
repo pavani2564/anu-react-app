@@ -2,7 +2,7 @@
   text-align: center;
   padding: 20px;
   font-size: 1.2em;
-  background-image: url('image.jpg'); 
+  background-image: url('image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -10,13 +10,13 @@
   opacity: 0.8;
 }
 
-h2 {
+.about-container h2 {
   font-size: 2em;
-  color: #000; 
-  margin-bottom: 10px;
+  color: #000;
+  margin: 10px 0;
 }
 
-p {
+.about-container p {
   margin: 10px 0;
   color: #000;
 }
