@@ -1,0 +1,38 @@
+/* Monuments.css */
+
+.monuments-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.monuments-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.monument-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.monument-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.monument-card h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.monument-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}

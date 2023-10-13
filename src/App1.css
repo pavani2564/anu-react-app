@@ -6,6 +6,12 @@ html, body {
   height: 100%;
 }
 
+body {
+  background-image: url('./js/india.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .App {
   display: flex;
   flex-direction: column;

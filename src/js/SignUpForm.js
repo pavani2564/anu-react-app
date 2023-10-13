@@ -5,8 +5,9 @@ class SignUpForm extends React.Component {
   render() {
     return (
       <section id="a">
+        <a href="/">Home</a>
         <h2 align="center">SIGN UP</h2>
-        <form id="signupForm" action="http://your-api-endpoint.com/signup">
+        <form id="signupForm" >
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" placeholder="Enter your name" required /><br /><br />
 
@@ -16,7 +17,7 @@ class SignUpForm extends React.Component {
           <label htmlFor="password">Password:</label>
           <input type="password" id="password" placeholder="Enter your Password" required /><br /><br />
 
-          <button type="submit" value="Sign Up">
+          <button type="submit" value="Sign Up"  >
             Sign Up
           </button>
         </form>
