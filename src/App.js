@@ -3,7 +3,7 @@ import './App1.css';
 import About from './js/About';
 import SignUpForm from './js/SignUpForm';
 import LoginForm from './js/LoginForm';
-import Monuments from './js/Monuments';
+import Monuments from './js/monuments';
 import { Link } from 'react-router-dom';
 
 function App() {
